@@ -110,7 +110,7 @@
     <activemq.version>5.5.0</activemq.version>
     <ant.version>1.9.1</ant.version>
     <antlr.version>3.5.2</antlr.version>
-    <apache-directory-server.version>1.5.6</apache-directory-server.version>
+    <apache-directory-server.version>1.5.7</apache-directory-server.version>
     <apache-directory-clientapi.version>0.1</apache-directory-clientapi.version>
     <avatica.version>1.8.0</avatica.version>
     <avro.version>1.7.7</avro.version>
@@ -207,6 +207,11 @@
   </properties>
 
   <repositories>
+    <repository>
+      <id>pentaho-repo</id>
+      <name>pentaho-repo</name>
+      <url>https://public.nexus.pentaho.org/content/groups/omni/</url>
+    </repository>
     <repository>
       <id>central</id>
       <name>central</name>
