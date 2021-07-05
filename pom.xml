@@ -208,11 +208,6 @@
 
   <repositories>
     <repository>
-      <id>pentaho-repo</id>
-      <name>pentaho-repo</name>
-      <url>https://public.nexus.pentaho.org/content/groups/omni/</url>
-    </repository>
-    <repository>
       <id>central</id>
       <name>central</name>
       <url>https://repo.maven.apache.org/maven2</url>
@@ -221,6 +216,11 @@
         <enabled>true</enabled>
         <checksumPolicy>warn</checksumPolicy>
       </releases>
+    </repository>
+    <repository>
+      <id>pentaho-repo</id>
+      <name>pentaho-repo</name>
+      <url>https://public.nexus.pentaho.org/content/groups/omni/</url>
     </repository>
   </repositories>
 
@@ -1133,6 +1133,14 @@
       </plugin>
     </plugins>
   </build>
+
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/khwj/hive</url>
+    </repository>
+  </distributionManagement>
 
   <profiles>
     <profile>
